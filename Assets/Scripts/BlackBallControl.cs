@@ -7,6 +7,7 @@ public class BlackBallControl : MonoBehaviour
     Vector2 startPos, endPos, direction;
     float touchTimeStart, touchTimeFinish, timeInterval;
     bool canDragBall = true; // Topun sürüklenip sürüklenmediğini kontrol eden değişken
+    float dragThreshold = 10f; // Sürükleme olarak algılamak için hareket eşiği
 
     [Range(5f, 15f)]
     public float throwForce;
@@ -46,8 +47,12 @@ public class BlackBallControl : MonoBehaviour
                 endPos = Input.GetTouch(0).position;
                 direction = startPos - endPos;
 
-                Vector3 force = new Vector3(-direction.x, 0, -direction.y).normalized * throwForce;
-                GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+                // Eğer hareket mesafesi eşik değeri aşıyorsa
+                if (direction.magnitude > dragThreshold)
+                {
+                    Vector3 force = new Vector3(-direction.x, 0, -direction.y).normalized * throwForce;
+                    GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+                }
             }
         }
     }

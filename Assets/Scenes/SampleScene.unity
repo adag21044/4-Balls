@@ -150,7 +150,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288405302}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6a3c3a39c04e03c43aebde0945028c03, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -162,7 +162,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 1.59}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &288405304
 MeshRenderer:
@@ -571,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouchingSlider: 0
+  playerBallScript: {fileID: 1656381018}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +728,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844913768}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6a3c3a39c04e03c43aebde0945028c03, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -739,7 +740,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 1.59}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &844913770
 MeshRenderer:
@@ -1211,7 +1212,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320196638}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6a3c3a39c04e03c43aebde0945028c03, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1223,7 +1224,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 1.59}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1320196640
 MeshRenderer:
@@ -1491,7 +1492,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649417190}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6a3c3a39c04e03c43aebde0945028c03, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1503,7 +1504,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 1.59}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1649417192
 MeshRenderer:

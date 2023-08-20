@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -6,6 +5,7 @@ using UnityEngine.UI;
 public class SliderControl : MonoBehaviour
 {
     public bool isTouchingSlider = false;
+    public MonoBehaviour playerBallScript; // Top objesinin script bileşeni
 
     void Start()
     {
@@ -43,13 +43,22 @@ public class SliderControl : MonoBehaviour
     public void OnPointerDelegate(PointerEventData eventData, bool isDown)
     {
         isTouchingSlider = isDown;
+        
         if (isDown)
         {
             Debug.Log("Slider'a dokunuldu.");
+            if (playerBallScript != null)
+            {
+                playerBallScript.enabled = false; // Top objesinin scriptini duraklat
+            }
         }
         else
         {
             Debug.Log("Slider'dan el çekildi.");
+            if (playerBallScript != null)
+            {
+                playerBallScript.enabled = true; // Top objesinin scriptini yeniden etkinleştir
+            }
         }
     }
 
